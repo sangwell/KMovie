@@ -2,7 +2,7 @@
 
 ![Image of Icon](http://up526.com/github/movieicon.jpg)
 
-##预览版
+## 预览版
 https://github.com/sangwell/movie-app-for-ionic
 
 # 运行方式
