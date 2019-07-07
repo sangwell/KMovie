@@ -1,0 +1,139 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+//Variables
+/*$AppColor: #ec3f3f;
+//$AppColor: rgb(255, 51, 102);
+//$AppColor: #e60028;
+$AppPlaceHolder: #bdbdbd;
+
+$AppBg: linear-gradient(to top right, #1900dc 0%, #5351c3 50%, #b68cff 100%);*/
+//global style
+
+@font-face {
+  font-family: 'kr-font';
+  src: url("./assets/fonts/ufonts.com_nobel-bold-opentype.otf") format('opentype'), url("./assets/fonts/ufonts.com_nobel-bold.ttf") format('truetype'), url("./assets/fonts/ufonts.com_nobel-bold.eot") format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'kr-font-web';
+  src: url("./assets/fonts/webfont.woff") format('opentype'), url("./assets/fonts/webfont.ttf") format('truetype'), url("./assets/fonts/webfont.eot") format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.article-item{
+  padding: 10px 15px 15px 15px;
+  //border: 1px solid #000;
+}
+
+
+//override
+ion-refresher{
+  z-index: 3000;
+}
+.swiper-pagination-bullet-active {
+  background: var(--app-color);
+}
+.swiper-slide {
+  overflow-y: auto;
+}
+.tabs-ios .tab-button-icon {
+  height: 40px;
+}
+.tabs-ios .tabbar{
+  padding-top: 10px;
+}
+.toolbar-title-ios{
+  font-size: 14px;
+  font-weight: bold;
+}
+.title-ios{
+  font-size: 14px;
+  font-weight: bold;
+}
+.toolbar-ios {
+  min-height: 40px;
+}
+.swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 3px;
+}
+
+.ion-ios-krDiscovery:before {
+  content: url("./assets/imgs/discovery-active.svg");
+}
+.ion-ios-krDiscovery-outline:before {
+  content: url("./assets/imgs/discovery-normal.svg");
+}
+
+.ion-ios-krDaily:before {
+  content: url("./assets/imgs/daily-active.svg");
+}
+.ion-ios-krDaily-outline:before {
+  content: url("./assets/imgs/daily-normal.svg");
+}
+
+.ion-ios-krChat:before {
+  content: url("./assets/imgs/chat-active.svg");
+}
+.ion-ios-krChat-outline:before {
+  content: url("./assets/imgs/chat-normal.svg");
+}
+
+.ion-ios-krUser:before {
+  content: url("./assets/imgs/user-active.svg");
+}
+.ion-ios-krUser-outline:before {
+  content: url("./assets/imgs/user-normal.svg");
+}
+
+.ion-ios-krFollow:before {
+  content: url("./assets/imgs/follow.svg");
+}
+.ion-ios-krFollow-outline:before {
+  content: url("./assets/imgs/follow.svg");
+}
+
+.ion-ios-krFollowed:before {
+  content: url("./assets/imgs/followed.svg");
+}
+.ion-ios-krFollowed-outline:before {
+  content: url("./assets/imgs/followed.svg");
+}
+/*ion-app.ios [padding] .scroll-content {
+  padding: 10px;
+}*/
+/*super-tabs-toolbar > ion-toolbar.toolbar {
+  display: none!important;
+}*/

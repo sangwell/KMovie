@@ -1,0 +1,22 @@
+<!--
+<div class="popular-layout">
+    <div class="popular-title">
+        <div class="popular-author"><span>{{article.author}}</span></div>
+        {{article.title}}
+    </div>
+</div>-->
+<ion-slides pager>
+
+  <ion-slide *ngFor="let item of list" (click)="openArticle(item.ImageSrc)">
+    <div class="popular-layout">
+      <img [src]="item.ImageSrc" alt="">
+      <div class="popular-title">
+        <div class="popular-author">
+          <span>{{item.Author}}</span>
+        </div>
+        <span class="title-span">{{item.Title}}</span>
+      </div>
+    </div>
+  </ion-slide>
+
+</ion-slides>

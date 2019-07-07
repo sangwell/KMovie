@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="back()">
+                <ion-icon slot="icon-only" name="arrow-back" color="dark" style="font-size: 24px;"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>历史日签</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <div *ngFor="let item of dailyHistory" class="daily-layout" [ngStyle]="{'background-color':item.BgColor}">
+        <div class="daily-time">{{item.DateTime}}</div>
+        <div class="daily-content">{{item.Content}}</div>
+        <div class="daily-title">{{item.MovieTitle}}</div>
+    </div>
+
+</ion-content>

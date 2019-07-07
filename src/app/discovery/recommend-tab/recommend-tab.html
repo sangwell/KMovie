@@ -1,0 +1,25 @@
+<ion-content>
+    <!--首页顶部推荐-->
+    <div class="article-item">
+        <app-popular-recommend></app-popular-recommend>
+    </div>
+    <!--推荐来源-->
+    <div>
+        <app-recommend-author></app-recommend-author>
+    </div>
+    <!--文章列表-->
+    <div class="article-item" *ngFor="let item of articleList;let articleIndex = index;"
+         (click)="openArticle(item.ImageSrc)">
+        <app-recommend-list *ngIf="articleIndex % 4 !== 3" [article]="item"></app-recommend-list>
+        <app-recommend-list-large *ngIf="articleIndex % 4 === 3" [article]="item"></app-recommend-list-large>
+        <!--最新影讯-->
+        <!--<app-recommend-movie-news *ngIf="articleIndex === 2"></app-recommend-movie-news>-->
+    </div>
+
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+        <ion-infinite-scroll-content
+                loadingSpinner="bubbles"
+                loadingText="Loading more data...">
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>

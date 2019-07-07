@@ -1,0 +1,7 @@
+{
+  "name": "kr-movie-app-v4",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

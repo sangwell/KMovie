@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>推荐来源</ion-title>
+  </ion-toolbar>
+  <div class="catalog-group">
+    <div></div>
+    <div>
+      <button type="button"
+              [ngClass]="{'tab-btn-active':currentTabIndex === 0}" (click)="switchToAll()">所有
+      </button>
+    </div>
+    <div>
+      <button type="button"
+              [ngClass]="{'tab-btn-active':currentTabIndex === 1}" (click)="switchToMine()">我的关注
+      </button>
+    </div>
+    <div></div>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-slides (ionSlideDidChange)="slideChanged()">
+
+    <ion-slide>
+      <div *ngFor="let item of authorList" class="author-item">
+        <div class="author-image"></div>
+        <div>
+          <span class="author-name">{{item.Name}}</span>
+          <button type="button" class="following-btn" *ngIf="!item.IsFollowed">
+            <ion-icon src="assets/imgs/follow.svg"></ion-icon>
+          </button>
+          <button type="button" class="following-btn followed-btn" *ngIf="item.IsFollowed">
+            <ion-icon src="assets/imgs/followed.svg"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div *ngFor="let item of authorList" class="author-item">
+        <div class="author-image"></div>
+        <div>
+          <span class="author-name">{{item.Name}}</span>
+          <button type="button" class="following-btn" *ngIf="!item.IsFollowed">
+            <ion-icon src="assets/imgs/follow.svg"></ion-icon>
+          </button>
+          <button type="button" class="following-btn followed-btn" *ngIf="item.IsFollowed">
+            <ion-icon src="assets/imgs/followed.svg"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </ion-slide>
+
+
+  </ion-slides>
+
+</ion-content>

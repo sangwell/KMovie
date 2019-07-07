@@ -1,0 +1,47 @@
+.article-layout-large{
+  height: 180px;
+  background: var(--app-place-holder);
+  border-radius: 5px;
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+}
+.a-l-l-title{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.a-l-l-info{
+  display: flex;
+}
+.a-l-l-info div{
+  flex: 1;
+}
+.a-l-l-author{
+  text-align: left;
+}
+.a-l-l-date{
+  text-align: right;
+}
+.a-l-l-author span{
+  font-size: 12px;
+  background: var(--app-color);
+  color: #ffffff;
+  letter-spacing: 1px;
+  padding: 2px 3px;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 2px;
+}
+.a-l-l-date{
+  font-size: 12px;
+  color: #aaa;
+  letter-spacing: 1px;
+}

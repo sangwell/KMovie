@@ -1,0 +1,60 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="slide-header">
+            <button [ngClass]="{'slide-active':this.currentSlideIndex === 0}" type="button" (click)="goToRecommendTab()">
+                推荐
+            </button>
+            <button [ngClass]="{'slide-active':this.currentSlideIndex === 1}" type="button" (click)="goToFollowingTab()">
+                关注
+            </button>
+            <button type="button" class="daily-btn" (click)="goToDailyHistoryPage()">
+                <ion-icon class="icon-layout" src="assets/imgs/daily.svg"></ion-icon>
+            </button>
+        </div>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+    <super-tabs (tabChange)="onTabChange($event)">
+        <super-tabs-toolbar slot="top">
+            <super-tab-button>
+                <ion-icon name="list"></ion-icon>
+                <ion-label>Feed</ion-label>
+            </super-tab-button>
+            <super-tab-button>
+                <ion-icon name="person"></ion-icon>
+                <ion-label>Profile</ion-label>
+            </super-tab-button>
+        </super-tabs-toolbar>
+        <super-tabs-container>
+            <super-tab>
+                <ion-nav [root]="recommendTab"></ion-nav>
+            </super-tab>
+            <super-tab>
+                <ion-nav [root]="followingTab"></ion-nav>
+            </super-tab>
+        </super-tabs-container>
+    </super-tabs>
+
+    <!--<super-tabs (tabChange)="onTabChange($event)">
+        &lt;!&ndash;<super-tabs-toolbar slot="top">
+            <super-tab-button>
+                <ion-icon name="list"></ion-icon>
+                <ion-label>Feed</ion-label>
+            </super-tab-button>
+            <super-tab-button>
+                <ion-icon name="person"></ion-icon>
+                <ion-label>Profile</ion-label>
+            </super-tab-button>
+        </super-tabs-toolbar>&ndash;&gt;
+        <super-tabs-container>
+            <super-tab>
+                <ion-nav [root]="recommendTab"></ion-nav>
+            </super-tab>
+            <super-tab>
+                <ion-nav [root]="followingTab"></ion-nav>
+            </super-tab>
+        </super-tabs-container>
+    </super-tabs>-->
+</ion-content>

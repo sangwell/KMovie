@@ -1,0 +1,56 @@
+.swiper-slide{
+  display: block;
+}
+.slide-zoom{
+  text-align: left;
+}
+.catalog-group{
+  height: 34px;
+  display: flex;
+  div{
+    flex: 1;
+    text-align: center;
+    button{
+      font-size: 12px;
+      background: none;
+      //border: none;
+      outline: none;
+      padding: 0 0 4px 0;
+    }
+  }
+}
+.tab-btn-active{
+  border-bottom: 2px solid var(--app-color);
+  transition: 0.2s;
+}
+.author-item{
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  margin: 10px 0 20px 0;
+  display: flex;
+  padding: 0 15px;
+  div{
+    flex: 1;
+    line-height: 45px;
+  }
+  .author-image{
+    height: 45px;
+    max-width: 45px;
+    border-radius: 50%;
+    background: #cccccc;
+  }
+  .author-name{
+    padding: 0 10px;
+  }
+  .following-btn{
+    float: right;
+    height: 35px;
+    padding: 0 15px;
+    margin: 5px;
+    background: none;
+  }
+  .followed-btn{
+    opacity: 0.5;
+  }
+}

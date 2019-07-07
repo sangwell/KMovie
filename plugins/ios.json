@@ -1,0 +1,30 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.krmovie.app"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "io.krmovie.app"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "io.krmovie.app"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.krmovie.app"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "io.krmovie.app"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.krmovie.app"
+    }
+  },
+  "dependent_plugins": {}
+}

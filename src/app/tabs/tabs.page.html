@@ -1,0 +1,29 @@
+<ion-tabs (ionTabsDidChange)="onTabsDidChange($event)">
+
+    <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="discovery">
+            <!--<ion-icon name="krDiscovery"></ion-icon>-->
+            <ion-icon *ngIf="currentTabIndex!=='discovery'" class="icon-layout" src="assets/imgs/discovery-normal.svg"></ion-icon>
+            <ion-icon *ngIf="currentTabIndex==='discovery'" class="icon-layout" src="assets/imgs/discovery-active.svg"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="author">
+            <!--<ion-icon name="krDaily"></ion-icon>-->
+            <ion-icon *ngIf="currentTabIndex!=='author'" class="icon-layout" src="assets/imgs/daily-normal.svg"></ion-icon>
+            <ion-icon *ngIf="currentTabIndex==='author'" class="icon-layout" src="assets/imgs/daily-active.svg"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="notice">
+            <!--<ion-icon name="krchat"></ion-icon>-->
+            <ion-icon *ngIf="currentTabIndex!=='notice'" class="icon-layout" src="assets/imgs/chat-normal.svg"></ion-icon>
+            <ion-icon *ngIf="currentTabIndex==='notice'" class="icon-layout" src="assets/imgs/chat-active.svg"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="user">
+            <!--<ion-icon name="krUser"></ion-icon>-->
+            <ion-icon *ngIf="currentTabIndex!=='user'" class="icon-layout" src="assets/imgs/user-normal.svg"></ion-icon>
+            <ion-icon *ngIf="currentTabIndex==='user'" class="icon-layout" src="assets/imgs/user-active.svg"></ion-icon>
+        </ion-tab-button>
+    </ion-tab-bar>
+
+</ion-tabs>

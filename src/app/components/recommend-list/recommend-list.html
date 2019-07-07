@@ -1,0 +1,16 @@
+<div class="article-layout">
+    <div class="article-info">
+        <div class="article-title">
+            {{article.Title}}
+        </div>
+        <div class="article-author">
+            {{article.Author}}
+        </div>
+        <div class="article-date">
+            {{article.CreateTime | DateFormat}}
+        </div>
+    </div>
+    <div class="article-image">
+      <img [src]="article.ImageSrc" alt="">
+    </div>
+</div>

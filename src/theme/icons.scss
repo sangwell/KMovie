@@ -1,0 +1,48 @@
+/*.tab-button[aria-selected=false] .ion-md-myIcon:before {
+  content: url("../assets/imgs/yjl-nav-discovery.svg");
+}
+.tab-button[aria-selected=true] .ion-md-myIcon-outline:before {
+  content: url("../assets/imgs/yjl-nav-discovery.svg");
+}*/
+
+.ion-ios-krDiscovery:before {
+  content: url("../assets/imgs/discovery-active.svg");
+}
+.ion-ios-krDiscovery-outline:before {
+  content: url("../assets/imgs/discovery-normal.svg");
+}
+
+.ion-ios-krDaily:before {
+  content: url("../assets/imgs/daily-active.svg");
+}
+.ion-ios-krDaily-outline:before {
+  content: url("../assets/imgs/daily-normal.svg");
+}
+
+.ion-ios-krChat:before {
+  content: url("../assets/imgs/chat-active.svg");
+}
+.ion-ios-krChat-outline:before {
+  content: url("../assets/imgs/chat-normal.svg");
+}
+
+.ion-ios-krUser:before {
+  content: url("../assets/imgs/user-active.svg");
+}
+.ion-ios-krUser-outline:before {
+  content: url("../assets/imgs/user-normal.svg");
+}
+
+.ion-ios-krFollow:before {
+  content: url("../assets/imgs/follow.svg");
+}
+.ion-ios-krFollow-outline:before {
+  content: url("../assets/imgs/follow.svg");
+}
+
+.ion-ios-krFollowed:before {
+  content: url("../assets/imgs/followed.svg");
+}
+.ion-ios-krFollowed-outline:before {
+  content: url("../assets/imgs/followed.svg");
+}

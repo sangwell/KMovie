@@ -1,0 +1,25 @@
+<div class="author-layout">
+    <div class="author-layout-title">
+        <span>推荐来源</span>
+        <a>不再显示</a>
+    </div>
+    <div class="author-layout-body">
+        <div class="author-inner">
+            <div class="author-item" *ngFor="let item of authorList">
+                <!--<ion-img [src]="item.imageSrc"></ion-img>-->
+                <div class="author-image">
+                    <img [src]="item.imageSrc" alt="">
+                </div>
+                <span>{{item.name}}</span>
+                <button type="button">
+                    +关注
+                </button>
+            </div>
+            <div class="author-item">
+                <div class="author-all">
+                    <button type="button">查看所有</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
