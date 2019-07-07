@@ -7,4 +7,4 @@
   > - `npm run start`
 
 # App预览
-![Image of App](http://up526.com/github/movieapp.jpg)
+![Image of Icon](http://up526.com/github/movieicon.jpg)
